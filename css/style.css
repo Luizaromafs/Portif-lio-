@@ -1,0 +1,125 @@
+:root {
+    --primary: #276326; /* Verde de destaque (mais tech) */
+    --secondary: #1e1e1e; /* Fundo Escuro Principal */
+    --tertiary: #2a2a2a; /* Fundo Secundário Claro */
+    --text-light: #f8f9fa;
+    --text-muted: #adb5bd;
+}
+
+body {
+    background-color: var(--secondary);
+    color: var(--text-light);
+    padding-top: 56px;
+}
+
+.page-section {
+    padding: 10rem 0;
+}
+.page-section.bg-light {
+    background-color: var(--tertiary) !important;
+    color: var(--text-light);
+}
+
+.section-heading {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+.section-subheading {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 4rem;
+    color: var(--text-muted) !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(30, 30, 30, 0.95), rgba(30, 30, 30, 0.95)), url('../img/bg-hero.jpg'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.hero-section h1 {
+    font-size: 4.5rem;
+    text-shadow: 0 0 15px rgba(69, 182, 73, 0.5); 
+}
+
+#mainNav {
+    background-color: rgba(30, 30, 30, 0.9) !important; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: padding 0.3s ease-in-out;
+}
+#mainNav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--secondary) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-primary:hover {
+    background-color: #37943b;
+    border-color: #37943b;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid var(--primary);
+}
+
+.portfolio-item {
+    cursor: pointer;
+    overflow: hidden; 
+}
+.portfolio-item img {
+    transition: transform 0.5s ease;
+}
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+.portfolio-caption {
+    background-color: var(--tertiary);
+    padding: 1.5rem;
+    text-align: center;
+}
+.portfolio-caption-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.portfolio-caption-subheading {
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+.btn-filter.active, .btn-filter:hover {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: var(--text-light) !important;
+}
+.btn-filter {
+    transition: all 0.3s;
+}
+
+.footer {
+    background-color: var(--secondary);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+#contact {
+    background-color: var(--tertiary);
+}
+.form-control {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--text-light);
+}
+.form-control:focus {
+    background-color: var(--secondary);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(69, 182, 73, 0.25);
+}
